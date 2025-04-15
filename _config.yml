@@ -23,12 +23,12 @@ description: >- # dont remove this line. this will ignore all new lines until th
   
   
 # Place your profile image in /assets/images/profile-image/folder and edit the file name
-profile_image: ./assets/images/profile-image/avatar.jpeg
+profile_image: ./assets/images/me.jpg
 
 
 # Link your resume
 # You can place your resume in assets/resume/{resume file.pdf} or add external link such as pdf saved in google drive 
-resume-url: https://drive.google.com/file/d/13Z3duVzh-gguPU5r03oJVEE6rV9rd3DS/view?usp=sharing
+resume-url: assets/resume/Makoto Fukumoto Resume.pdf
 
 
 # Set up external links - this will show up as small icons next to your name.
