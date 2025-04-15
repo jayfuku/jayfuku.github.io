@@ -8,5 +8,5 @@ skills:
 - RESTful API
 - Express.js
 - Front/Backend Engineering
-main-image: https://raw.githubusercontent.com/jayfuku/SteamLens-Public/refs/heads/main/resources/1400x560%20Marquee%20Promo%20Tile.png
+main-image: /440x280 Small Promo Tile.png
 ---
