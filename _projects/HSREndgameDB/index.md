@@ -11,7 +11,7 @@ skills:
 - UI/UX Design and Usability
 main-image: /HSREndgameDBPromo.png
 ---
-## Overview
+## Summary
 
 HSREndgameDB is a website designed to allow users to share clears of endgame content in the game "Honkai: Star Rail". Instead of trying to parse through Youtube searches or Reddit, you can now look through HSREndgameDB to find exactly what you want.
 
