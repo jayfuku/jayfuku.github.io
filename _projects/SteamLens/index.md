@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SteamLens
-description:  Chrome Extension to be more informed about videogames
+description:  Chrome Extension designed to help people be more informed about video games before making purchasing decisions.
 skills: 
 - Typescript
 - React
