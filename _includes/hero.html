@@ -12,12 +12,12 @@
                         {% if site.external-links[platform] %}
                             {% case platform %}
                             {% when 'linkedin' %}
-                            <a href="https://www.linkedin.com/in/{{ site.external-links[platform] }}/" target="_blank">
+                            <a href="{{ site.external-links[platform] }}" target="_blank">
                                 <i class="fa-brands fa-linkedin"></i>
                             </a>
                         
                             {% when 'github' %}
-                                <a href="https://github.com/{{ site.external-links[platform] }}/" target="_blank">
+                                <a href="{{ site.external-links[platform] }}" target="_blank">
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             
