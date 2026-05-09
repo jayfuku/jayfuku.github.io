@@ -1,0 +1,54 @@
+
+<!-- SECTION 1: Hero -->
+<section class="hero-section">
+
+  <div class="hero-top">
+    <span class="hero-tag">Software Engineer 🛠️</span>
+    <h1 class="hero-headline">
+      I build things that <em class="hero-accent">ship.</em>
+    </h1>
+  </div>
+
+  <div class="hero-bio-row">
+    <div class="hero-bio">
+      <p>{{ site.description }}</p>
+      <div class="hero-actions">
+        <a href="{{ site.resume-url }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#projects" class="btn-secondary">Projects</a>
+        <span class="hero-socials">
+          {% assign platforms = "linkedin,github,x-twitter,stackoverflow,discord,medium,threads,bluesky,instagram,youtube" | split: "," %}
+          {% for platform in platforms %}
+            {% if site.external-links[platform] %}
+              {% case platform %}
+              {% when 'linkedin' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+              {% when 'github' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              {% when 'x-twitter' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              {% when 'stackoverflow' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Stack Overflow"><i class="fa-brands fa-stack-overflow"></i></a>
+              {% when 'discord' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+              {% when 'medium' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+              {% when 'threads' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+              {% when 'bluesky' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Bluesky"><i class="fa-solid fa-cloud"></i></a>
+              {% when 'instagram' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              {% when 'youtube' %}
+                <a href="{{ site.external-links[platform] }}" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              {% endcase %}
+            {% endif %}
+          {% endfor %}
+        </span>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="{{ site.profile_image }}" alt="{{ site.name }} photo">
+    </div>
+  </div>
+
+</section>
