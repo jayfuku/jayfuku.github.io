@@ -152,16 +152,15 @@ nav .mobile-nav {
 
 /* SECTION 1: Hero */
 .hero-section {
-    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 60px 0 48px;
+    padding: 48px 0 64px;
     border: none;
 }
 
 .hero-top {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .hero-tag {
@@ -198,7 +197,7 @@ nav .mobile-nav {
 .hero-bio-row {
     display: flex;
     gap: 64px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-bio {
@@ -795,8 +794,7 @@ footer p {
 
     /* SECTION 1: HERO */
     .hero-section {
-        padding: 40px 0 32px;
-        min-height: auto;
+        padding: 32px 0 40px;
     }
 
     .hero-bio-row {
