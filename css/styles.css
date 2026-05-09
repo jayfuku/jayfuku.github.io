@@ -521,26 +521,17 @@ nav .mobile-nav {
 
 .footer-quote {
     text-align: center;
-    padding: 36px 24px 12px;
+    padding: 36px 24px 16px;
 }
 
 .footer-quote .quote-text {
     font-family: 'Lora', serif;
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 1.15rem;
     color: var(--muted-color);
-    max-width: 480px;
-    margin: 0 auto 6px;
+    max-width: 560px;
+    margin: 0 auto;
     line-height: 1.65;
-}
-
-.footer-quote .quote-attr {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.7rem;
-    color: var(--muted-color);
-    opacity: 0.6;
-    margin: 0;
-    letter-spacing: 0.04em;
 }
 
 footer {
@@ -597,7 +588,8 @@ footer .license {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    gap: 0;  /* Changed from 10px to 0 */
+    gap: 0;
+    padding-bottom: 24px;
 }
 
 footer span, p {
