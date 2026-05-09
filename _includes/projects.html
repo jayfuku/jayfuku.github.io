@@ -4,23 +4,23 @@
 
     <div class="grid-container">
         {% for item in site.projects %}
-    <a href="{{ item.url }}" class="project-link">
-        <div class="project-card">
-            {% assign folder_path = item.path | split: "/" | slice: 0, 2 | join: "/" %}
-            {% assign image_path = "/" | append: folder_path | append: item['main-image'] %}
-            <img src="{{ image_path }}" alt="{{ item.title }} image">
-            <h3 class="project-title">{{ item.title }}</h3>
-            <div class="project-skills">
-                {% for skill in item.skills %}
-                    <span class="skill">{{ skill }}</span>
-                {% endfor %}
+        <a href="{{ item.url }}" class="project-link">
+            <div class="project-card">
+                <div class="project-card-left">
+                    <span class="project-number">{% if forloop.index < 10 %}0{{ forloop.index }}{% else %}{{ forloop.index }}{% endif %}</span>
+                    <h3 class="project-title">{{ item.title }}</h3>
+                    <p class="project-headline">{{ item.headline }}</p>
+                </div>
+                <div class="project-card-right">
+                    <div class="project-skills">
+                        {% for skill in item.skills %}
+                            <span class="skill">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-            <p class="project-description">{{ item.description }}</p>
-            <button class="read-more">Read more →</button>
-        </div>
-    </a>
-{% endfor %}
+        </a>
+        {% endfor %}
     </div>
 
-
- </section>
+</section>
