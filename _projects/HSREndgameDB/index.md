@@ -2,6 +2,7 @@
 layout: post
 title: HSREndgameDB.info
 description:  Website dedicated to enhance knowlegesharing among players of the game "Honkai Star Rail"
+headline: "Built for HSR players, by an HSR player"
 skills: 
 - Typescript
 - React
