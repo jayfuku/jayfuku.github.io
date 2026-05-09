@@ -159,8 +159,14 @@ nav .mobile-nav {
     border: none;
 }
 
-.hero-top {
-    margin-bottom: 20px;
+.hero-inner {
+    display: flex;
+    gap: 64px;
+    align-items: flex-start;
+}
+
+.hero-left {
+    flex: 1;
 }
 
 .hero-tag {
@@ -174,7 +180,7 @@ nav .mobile-nav {
     border-radius: 99px;
     background: var(--light-background-color);
     color: #CC3700;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .hero-headline {
@@ -183,7 +189,7 @@ nav .mobile-nav {
     font-size: clamp(2.6rem, 5vw, 4.5rem);
     line-height: 1.05;
     color: var(--text-color);
-    margin: 0;
+    margin: 0 0 20px 0;
     font-style: normal;
 }
 
@@ -194,17 +200,7 @@ nav .mobile-nav {
     color: var(--highlight-color);
 }
 
-.hero-bio-row {
-    display: flex;
-    gap: 64px;
-    align-items: flex-start;
-}
-
 .hero-bio {
-    flex: 1;
-}
-
-.hero-bio p {
     font-family: 'Inter', sans-serif;
     font-size: 1.05rem;
     line-height: 1.75;
@@ -789,20 +785,26 @@ footer p {
         padding: 32px 0 40px;
     }
 
-    .hero-bio-row {
+    .hero-inner {
         flex-direction: column-reverse;
-        gap: 32px;
+        gap: 24px;
         text-align: center;
+    }
+
+    .hero-left {
+        width: 100%;
     }
 
     .hero-photo {
         flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .hero-photo img {
         width: 220px;
         height: 264px;
-        margin: 0 auto;
     }
 
     .hero-actions {
