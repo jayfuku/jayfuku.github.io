@@ -621,10 +621,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-.post-view .summary .project-description {
-    margin-bottom: 10px;
-}
-
 .post-view .summary .skills-card {
     display: flex;
     flex-direction: column;
@@ -636,9 +632,16 @@ footer p {
     flex-wrap: wrap;
     justify-content: start;
     gap: 5px;
-    
+
 }
-  
+
+.post-view .summary .post-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
 .post-view .summary .skill {
     background-color: var(--light-background-color);
     color: var(--link-color);
@@ -650,6 +653,12 @@ footer p {
 .post-view .content {
     padding: 0 50px;
     border-radius: 10px;
+}
+
+.post-view .content h2 {
+    border-left: 4px solid var(--highlight-color);
+    padding-left: 12px;
+    margin: 32px 0 12px;
 }
  
 .post-view .content .image-gallery {
