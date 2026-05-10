@@ -202,6 +202,12 @@ nav .mobile-nav {
     color: var(--highlight-color);
 }
 
+.hero-strike {
+    text-decoration: line-through;
+    color: var(--muted-color);
+    font-style: normal;
+}
+
 .hero-role {
     font-family: 'Inter', sans-serif;
     font-size: 1.2rem;
