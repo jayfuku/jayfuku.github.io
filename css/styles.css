@@ -916,13 +916,17 @@ footer p {
     /* Project Post Page */
     .post-view {
         margin: 0;
-         
     }
     .post-view .content {
         padding: 0 5px;
-        margin: 0
-      
-    
+        margin: 0;
+    }
+    .post-view .content p,
+    .post-view .content li {
+        font-size: 1rem;
+    }
+    .post-view .content h2 {
+        font-size: 1.25rem;
     }
     .post-view .summary{
         padding: 5px 5px;
