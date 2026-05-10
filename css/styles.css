@@ -77,7 +77,9 @@ nav {
 nav .left a {
     color: var(--text-color);
     font-size: 30px;
-    font-weight: 600;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: 700;
 }
 
 nav .right {
