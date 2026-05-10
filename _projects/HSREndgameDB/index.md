@@ -3,6 +3,8 @@ layout: post
 title: HSREndgameDB.info
 description:  Website dedicated to enhance knowlegesharing among players of the game "Honkai Star Rail"
 headline: "Built for HSR players, by an HSR player"
+github-url: https://github.com/jayfuku/HSREndgameDB-Public
+live-url: https://www.hsrendgamedb.info/
 skills: 
 - Typescript
 - React

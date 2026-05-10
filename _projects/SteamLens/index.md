@@ -3,6 +3,8 @@ layout: post
 title: SteamLens
 description:  Chrome Extension designed to help people be more informed about video games before making purchasing decisions.
 headline: "All the info you need, without leaving the page"
+github-url: https://github.com/jayfuku/SteamLens-Public/tree/patch
+live-url: https://chromewebstore.google.com/detail/steamlens/dlkmkiiccmmfjoodngomfndmfilhblhe
 skills: 
 - Typescript
 - React
