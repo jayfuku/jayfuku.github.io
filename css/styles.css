@@ -204,8 +204,8 @@ nav .mobile-nav {
 
 .hero-role {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--muted-color);
     margin: 0 0 20px 0;
 }
