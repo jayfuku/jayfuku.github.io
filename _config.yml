@@ -47,38 +47,37 @@ external-links:    # input only your own url slug. The icons with missing entrie
 skills:
   - category: Programming Languages
     tools:
-    - Typescript
-    - Javascript
+    - TypeScript
+    - JavaScript
     - HTML
     - CSS
     - Java
     - Python
     - C++
     - Swift
-  - category: Frameworks and Libraries
+  - category: Frameworks & Libraries
     tools:
     - React
-    - Tailwind CSS
     - Angular
-    - Express.js
     - Next.js
-  - category: Hosting
-    tools:
-    - Vercel
-    - Render.com  
-  - category: Database Management Systems
+    - Express.js
+    - Tailwind CSS
+  - category: Database
     tools:
     - MySQL
     - PostgreSQL
-    - NoSQL Databases
-  - category: Tools
+  - category: Tools & Infrastructure
     tools:
-    - Github
+    - GitHub
+    - GitHub Actions
     - Jira
+    - Vercel
+    - Render.com
     - ElasticSearch
     - OpenSearch
-    - Proprietary VCS
-    - Propietary dashboarding software
+    - pytest
+    - Jest
+    - Figma
 
 
 # Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
