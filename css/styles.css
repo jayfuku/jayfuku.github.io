@@ -152,10 +152,8 @@ nav .mobile-nav {
 
 /* SECTION 1: Hero */
 .hero-section {
-    min-height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 60px 0 48px;
     border: none;
 }
@@ -800,7 +798,6 @@ footer p {
     /* SECTION 1: HERO */
     .hero-section {
         padding: 40px 0 32px;
-        min-height: auto;
     }
 
     .hero-bio-row {
