@@ -15,7 +15,7 @@ main-image: /440x280 Small Promo Tile.png
 ---
 ## Summary
 
-SteamLens is a Chrome extension designed to help streamline the experience of search for information about the next games users want to play. This extension allows users to quickly view information from various sources in one place.
+SteamLens is a Chrome extension designed to help streamline the experience of searching for information about the next games users want to play. This extension allows users to quickly view information from various sources in one place.
 
 No new tabs, no hassle.
 

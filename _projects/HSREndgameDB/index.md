@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HSREndgameDB.info
-description:  Website dedicated to enhance knowlegesharing among players of the game "Honkai Star Rail"
+description:  Website dedicated to enhance knowledge sharing among players of the game "Honkai Star Rail"
 headline: "Built for HSR players, by an HSR player"
 github-url: https://github.com/jayfuku/HSREndgameDB-Public
 live-url: https://www.hsrendgamedb.info/
@@ -22,7 +22,7 @@ HSREndgameDB also preserves data of uploaded clears even after they're gone in t
 
 ## Deep Dive
 
-HSREndgameDB.info was created out of a problem I've noticed throughout my time playing live-service and live-service-esque videogames. New challenges would be added to the game on a regular basis but trying to find any information about strategies and gameplay was exremely tedious. The process often involved sifting through Google and Youtube search results which was filled with content unrelated to what I was looking for.
+HSREndgameDB.info was created out of a problem I've noticed throughout my time playing live-service and live-service-esque videogames. New challenges would be added to the game on a regular basis but trying to find any information about strategies and gameplay was extremely tedious. The process often involved sifting through Google and Youtube search results which was filled with content unrelated to what I was looking for.
 
 "Honkai: Star Rail" is the most recent game I've noticed that had this problem with new challenge stages being added biweekly and continually not being able to find videos or guides I can adapt to my account. From this struggle, HSREndgameDB.info was created to be a singular place for videos and guides to enhance knowledge sharing among players.
 

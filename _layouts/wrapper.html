@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <!-- SEO -->
+    <meta name="description" content="{{ site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.url | prepend: site.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/me.jpg">
+    <meta name="twitter:card" content="summary">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Lora:ital,wght@1,600;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/syntax.css">
 
-    <script src="{{ '/assets/js/script.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/script.js' | relative_url }}" defer></script>
 
-    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <title>{{ site.title }}</title>
-    
-
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 </head>
 <body>
     <!-- NAVBAR -->
-     {% include navbar.html%}
+    {% include navbar.html%}
 
-     <div class="page">{{content}}</div>
-
-     
-</body>
+    <div class="page">{{content}}</div>
 
     {% include footer.html%}
+</body>
 </html>

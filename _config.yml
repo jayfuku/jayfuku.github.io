@@ -8,6 +8,7 @@
 # Main Page Setup
 
 title: Jay Fukumoto's Portfolio # This is what shows up in the tab of the browser
+url: https://jayfukumoto.dev
 
 
 
@@ -15,8 +16,7 @@ title: Jay Fukumoto's Portfolio # This is what shows up in the tab of the browse
 name: Jay Fukumoto
 headline: "Full-stack software engineer · UCI CS grad · Southern California"
 description: >-
-  I focus on long-term solutions over short-term fixes. Getting the details right
-  is what makes that possible. Currently open to new roles. 👋
+  What sets me apart? I sit criss-cross applesauce in my chair. Also, I build the things I wish existed. Currently open to new roles. 👋
   
   
 # Place your profile image in /assets/images/profile-image/folder and edit the file name

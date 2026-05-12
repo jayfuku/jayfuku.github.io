@@ -193,6 +193,12 @@ nav .mobile-nav {
     color: var(--highlight-color);
 }
 
+.hero-strike {
+    color: var(--muted-color);
+    text-decoration: line-through;
+    text-decoration-color: var(--muted-color);
+}
+
 .hero-bio-row {
     display: flex;
     gap: 64px;
@@ -203,6 +209,14 @@ nav .mobile-nav {
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--muted-color);
+    margin: 16px 0 0;
 }
 
 .hero-bio {}
@@ -603,12 +617,12 @@ footer .license {
     gap: 0;  /* Changed from 10px to 0 */
 }
 
-footer span, p {
+footer span, footer p {
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
     max-width: 100%;
-    margin: 0; /* Added to remove default margins */
+    margin: 0;
 }
 
 footer p {
