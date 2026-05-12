@@ -188,7 +188,7 @@ nav .mobile-nav {
 .hero-headline {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
-    font-size: clamp(2.6rem, 5vw, 4.5rem);
+    font-size: clamp(2.2rem, 3vw, 3.5rem);
     line-height: 1.05;
     color: var(--text-color);
     margin: 0 0 20px 0;
