@@ -2,17 +2,19 @@
 <!-- SECTION 1: Hero -->
 <section class="hero-section">
 
-  <div class="hero-inner">
+  <div class="hero-bio-row">
     <div class="hero-left">
+    <div class="hero-top">
+      <span class="hero-tag">Software Engineer 🛠️</span>
       <h1 class="hero-headline">
-        I build things that <s class="hero-strike">break</s> <em class="hero-accent">last.</em>
+        I build things that <em class="hero-accent">ship.</em>
       </h1>
-      <p class="hero-role">Full stack software engineer specializing in web development</p>
-      <p class="hero-bio">{{ site.description }}</p>
+    </div>
+    <div class="hero-bio">
+      <p>{{ site.description }}</p>
       <div class="hero-actions">
         <a href="{{ site.resume-url }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="#projects" class="btn-secondary">Projects</a>
-        {% if site.external-links.linkedin %}<a href="{{ site.external-links.linkedin }}" class="btn-secondary" target="_blank" rel="noopener noreferrer">Get in touch</a>{% endif %}
         <span class="hero-socials">
           {% assign platforms = "linkedin,github,x-twitter,stackoverflow,discord,medium,threads,bluesky,instagram,youtube" | split: "," %}
           {% for platform in platforms %}
@@ -44,6 +46,7 @@
         </span>
       </div>
     </div>
+    </div><!-- /.hero-left -->
     <div class="hero-photo">
       <img src="{{ site.profile_image }}" alt="{{ site.name }} photo">
     </div>
