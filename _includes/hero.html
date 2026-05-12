@@ -12,6 +12,7 @@
       <div class="hero-actions">
         <a href="{{ site.resume-url }}" class="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
         <a href="#projects" class="btn-secondary">Projects</a>
+        {% if site.external-links.linkedin %}<a href="{{ site.external-links.linkedin }}" class="btn-secondary" target="_blank" rel="noopener noreferrer">Get in touch</a>{% endif %}
         <span class="hero-socials">
           {% assign platforms = "linkedin,github,x-twitter,stackoverflow,discord,medium,threads,bluesky,instagram,youtube" | split: "," %}
           {% for platform in platforms %}
