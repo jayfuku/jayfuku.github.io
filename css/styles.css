@@ -159,7 +159,7 @@ nav .mobile-nav {
 }
 
 .hero-top {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .hero-tag {
@@ -179,7 +179,7 @@ nav .mobile-nav {
 .hero-headline {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 800;
-    font-size: clamp(2.6rem, 5vw, 4.5rem);
+    font-size: clamp(2rem, 3.5vw, 3rem);
     line-height: 1.05;
     color: var(--text-color);
     margin: 0;
@@ -215,7 +215,7 @@ nav .mobile-nav {
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     font-weight: 500;
-    color: var(--muted-color);
+    color: var(--text-color);
     margin: 16px 0 0;
 }
 
@@ -225,7 +225,7 @@ nav .mobile-nav {
     font-family: 'Inter', sans-serif;
     font-size: 1.05rem;
     line-height: 1.75;
-    color: var(--muted-color);
+    color: var(--text-color);
     margin-bottom: 28px;
 }
 
