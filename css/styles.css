@@ -191,15 +191,13 @@ nav .mobile-nav {
     font-style: italic;
     font-weight: 700;
     color: var(--highlight-color);
-    display: inline-block;
-    opacity: 0;
-    animation: hero-ship-in 0.35s ease 1.2s forwards;
 }
 
 .hero-strike {
-    color: var(--muted-color);
+    color: var(--highlight-color);
     text-decoration: none; /* override <s> browser default; drawn via ::after */
     position: relative;
+    animation: hero-break-color 0.5s ease 1.2s forwards;
 }
 
 .hero-strike::after {
@@ -208,10 +206,11 @@ nav .mobile-nav {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 2px;
+    height: 4px;
     width: 0;
+    border-radius: 2px;
     background: var(--muted-color);
-    animation: hero-strike-through 0.5s ease-in-out 0.5s forwards;
+    animation: hero-strike-through 0.9s ease-in-out 0.6s forwards;
 }
 
 @keyframes hero-strike-through {
@@ -219,10 +218,11 @@ nav .mobile-nav {
     to   { width: 100%; }
 }
 
-@keyframes hero-ship-in {
-    from { opacity: 0; transform: translateY(6px); }
-    to   { opacity: 1; transform: translateY(0); }
+@keyframes hero-break-color {
+    from { color: var(--highlight-color); }
+    to   { color: var(--muted-color); }
 }
+
 
 .hero-bio-row {
     display: flex;
