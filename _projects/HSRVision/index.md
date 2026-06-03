@@ -2,7 +2,7 @@
 layout: post
 order: 1
 title: HSRVision
-description: Real-time damage tracker for Honkai: Star Rail, powered by screen capture and on-device machine learning.
+description: "Real-time damage tracker for Honkai: Star Rail, powered by screen capture and on-device machine learning."
 headline: "See who's carrying. In real time."
 live-url: https://hsr-vision.app
 skills:
