@@ -1,5 +1,6 @@
 ---
 layout: post
+order: 3
 title: HSREndgameDB.info
 description:  Website dedicated to enhance knowledge sharing among players of the game "Honkai Star Rail"
 headline: "Built for HSR players, by an HSR player"

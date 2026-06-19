@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <meta name="description" content="{{ site.description | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif site.seo-description %}{{ site.seo-description }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ page.url | prepend: site.url }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% elsif site.seo-description %}{{ site.seo-description }}{% else %}{{ site.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
     <meta property="og:image" content="{{ site.url }}/assets/images/me.jpg">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}/assets/images/me.jpg">
+
+    {% if page.url == "/" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.name }}",
+      "url": "{{ site.url }}",
+      "jobTitle": "Full-stack Software Engineer",
+      "sameAs": [
+        "{{ site.external-links.linkedin }}",
+        "{{ site.external-links.github }}"
+      ]
+    }
+    </script>
+    {% endif %}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
