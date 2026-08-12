@@ -28,6 +28,12 @@ profile_image: ./assets/images/me.jpg
 resume-url: /assets/resume/Jay_Fukumoto_SWE_Resume.pdf
 
 
+# Email, split so the full address never appears in the rendered HTML.
+# The contact page reassembles it in JS when someone clicks "Show email".
+email-user: jayfukum
+email-domain: gmail.com
+
+
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.

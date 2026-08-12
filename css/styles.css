@@ -567,6 +567,55 @@ nav .mobile-nav {
     transition: 0.1s
 }
 
+.contact-intro {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 35px;
+}
+
+.contact-list {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 18px 30px;
+    align-items: baseline;
+}
+
+.contact-list dt {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted-color);
+}
+
+.contact-list dd {
+    color: var(--text-color);
+    word-break: break-word;
+}
+
+.contact-reveal {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    background: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: border-color 0.15s;
+}
+
+.contact-reveal:hover {
+    border-color: var(--text-color);
+}
+
+.contact-noscript {
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+
 
 /* FOOTER */
 
@@ -1032,6 +1081,15 @@ footer p {
     /*SECTION 4: Contact */
     .contact-section{
         padding: 0 20px
+    }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+        gap: 4px 0;
+    }
+
+    .contact-list dd {
+        margin-bottom: 16px;
     }
 
     .post-view {

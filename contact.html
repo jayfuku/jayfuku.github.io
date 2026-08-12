@@ -1,0 +1,40 @@
+---
+layout: wrapper
+permalink: /contact/
+title: Contact
+description: "Get in touch with Jay Fukumoto, full-stack software engineer in Southern California. Email, LinkedIn, GitHub, and resume."
+---
+
+<section class="contact-section">
+  <h2>Contact</h2>
+
+  <p class="contact-intro">Email is the best way to reach me.</p>
+
+  <dl class="contact-list">
+    <dt>Email</dt>
+    <dd>
+      <button type="button" class="contact-reveal" data-eu="{{ site.email-user }}" data-ed="{{ site.email-domain }}">Show email</button>
+      <noscript>
+        <span class="contact-noscript">Enable JavaScript to see my address, or reach me on <a href="{{ site.external-links.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</span>
+      </noscript>
+    </dd>
+
+    <dt>LinkedIn</dt>
+    <dd>
+      <a href="{{ site.external-links.linkedin }}" target="_blank" rel="noopener noreferrer">{{ site.external-links.linkedin | remove: "https://www." | remove: "https://" | split: "/" | join: "/" }}</a>
+    </dd>
+
+    <dt>GitHub</dt>
+    <dd>
+      <a href="{{ site.external-links.github }}" target="_blank" rel="noopener noreferrer">{{ site.external-links.github | remove: "https://www." | remove: "https://" | split: "/" | join: "/" }}</a>
+    </dd>
+
+    <dt>Resume</dt>
+    <dd>
+      <a href="{{ site.resume-url }}" target="_blank" rel="noopener noreferrer">Download PDF</a>
+    </dd>
+
+    <dt>Location</dt>
+    <dd>Southern California &middot; open to remote</dd>
+  </dl>
+</section>
