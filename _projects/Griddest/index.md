@@ -2,6 +2,9 @@
 layout: post
 order: 4
 permalink: /projects/Griddest/
+redirect_from:
+  - /projects/Griddest/index/
+  - /_projects/Griddest/
 title: Griddest
 description: Browser-based tool that turns any image into a playable nonogram puzzle
 headline: "BYOP! (Build your own puzzle)"

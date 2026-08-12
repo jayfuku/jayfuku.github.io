@@ -2,6 +2,9 @@
 layout: post
 order: 1
 permalink: /projects/HSRVision/
+redirect_from:
+  - /projects/HSRVision/index/
+  - /_projects/HSRVision/
 title: HSRVision
 description: "Real-time damage tracker for Honkai: Star Rail, powered by screen capture and on-device machine learning."
 headline: "See who's carrying. In real time."

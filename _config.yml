@@ -158,6 +158,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Keep out of the published site. Without this, files like CLAUDE.md and
 # docs/ get rendered and land in sitemap.xml.

@@ -2,6 +2,9 @@
 layout: post
 order: 3
 permalink: /projects/HSREndgameDB/
+redirect_from:
+  - /projects/HSREndgameDB/index/
+  - /_projects/HSREndgameDB/
 title: HSREndgameDB.info
 description:  Website dedicated to enhance knowledge sharing among players of the game "Honkai Star Rail"
 headline: "Built for HSR players, by an HSR player"

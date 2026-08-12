@@ -2,6 +2,9 @@
 layout: post
 order: 2
 permalink: /projects/SteamLens/
+redirect_from:
+  - /projects/SteamLens/index/
+  - /_projects/SteamLens/
 title: SteamLens
 description:  Chrome Extension designed to help people be more informed about video games before making purchasing decisions.
 headline: "All the info you need, without leaving the page"
