@@ -5,8 +5,9 @@ layout: wrapper
 <div class="post-view">
     <div class="summary">
 
-        {% assign folder_path = page.path | split: "/" | slice: 0, 2 | join: "/" %}
-        {% assign image_path = "/" | append: folder_path | append: page['main-image'] %}
+        {% comment %} Jekyll copies collection static files to /projects/<Name>/, not /_projects/ {% endcomment %}
+        {% assign project_dir = page.path | split: "/" | slice: 1, 1 | join: "/" %}
+        {% assign image_path = "/projects/" | append: project_dir | append: page['main-image'] %}
         <img src="{{ image_path }}" alt="{{ page.title }} image">
 
         <div class="title-header">
