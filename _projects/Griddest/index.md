@@ -6,8 +6,8 @@ redirect_from:
   - /projects/Griddest/index/
   - /_projects/Griddest/
 title: Griddest
-description: Browser-based tool that turns any image into a playable nonogram puzzle
-headline: "BYOP! (Build your own puzzle)"
+description: "Browser tool that turns any image into a playable nonogram puzzle."
+highlight: "Grids up to 30x30, solved and shared without a server."
 github-url: https://github.com/jayfuku/nonogram-maker
 live-url: https://play-griddest.vercel.app/
 skills:

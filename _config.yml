@@ -86,20 +86,16 @@ skills:
     - Figma
 
 
-# Contact Form Setup. Setup an account and copy over the key. When someone fills out the form, it will be received in your email.
-formspree-key:   https://formspree.io/f/{8-digit key}
-
-
-
 # Active theme (Updatethis to switch themes). Make sure to keep the indentation the samne.
 colors:
-  text: "#1a1a1a"
-  border: "#e8e2d8"
-  link: "#FF4500"
-  highlight: "#FF4500"
-  background: "#F7F5EF"
-  light_background: "#ffe4d6"
-  muted: "#8FA3B1"
+  text: "#141B29"
+  border: "#DCE1EA"
+  link: "#2B4C8C"
+  highlight: "#2B4C8C"
+  background: "#F8F9FB"
+  light_background: "#DFE7F5"
+  muted: "#66738C"
+  accent_deep: "#1F3A6E"   # darker accent for pills/badges on light backgrounds
 
 # A few examples. 
 basic theme:

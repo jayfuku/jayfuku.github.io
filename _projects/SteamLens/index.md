@@ -6,8 +6,8 @@ redirect_from:
   - /projects/SteamLens/index/
   - /_projects/SteamLens/
 title: SteamLens
-description:  Chrome Extension designed to help people be more informed about video games before making purchasing decisions.
-headline: "All the info you need, without leaving the page"
+description: "Chrome extension that pulls reviews, playtime, and Linux compatibility onto any Steam store page."
+highlight: "Searches 100,000+ Steam games without leaving the page."
 github-url: https://github.com/jayfuku/SteamLens-Public/tree/patch
 live-url: https://chromewebstore.google.com/detail/steamlens/dlkmkiiccmmfjoodngomfndmfilhblhe
 skills: 

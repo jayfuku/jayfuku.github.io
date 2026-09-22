@@ -10,7 +10,8 @@
                 <div class="project-card-left">
                     <span class="project-number">{% if forloop.index < 10 %}0{{ forloop.index }}{% else %}{{ forloop.index }}{% endif %}</span>
                     <h3 class="project-title">{{ item.title }}</h3>
-                    <p class="project-headline">{{ item.headline }}</p>
+                    <p class="project-overview">{{ item.description }}</p>
+                    <p class="project-highlight">{{ item.highlight }}</p>
                 </div>
                 <div class="project-card-right">
                     <div class="project-skills">

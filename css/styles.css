@@ -9,6 +9,7 @@
   --background-color: {{ site.colors.background }};
   --light-background-color: {{ site.colors.light_background }};
   --muted-color: {{ site.colors.muted }};
+  --accent-deep-color: {{ site.colors.accent_deep }};
 }
 
 * {
@@ -181,7 +182,7 @@ nav .mobile-nav {
     padding: 5px 14px;
     border-radius: 99px;
     background: var(--light-background-color);
-    color: #CC3700;
+    color: var(--accent-deep-color);
     margin-bottom: 20px;
 }
 
@@ -202,35 +203,6 @@ nav .mobile-nav {
     color: var(--highlight-color);
 }
 
-.hero-strike {
-    color: var(--highlight-color);
-    text-decoration: none; /* override <s> browser default; drawn via ::after */
-    position: relative;
-    animation: hero-break-color 0.5s ease 1.2s forwards;
-}
-
-.hero-strike::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 4px;
-    width: 0;
-    border-radius: 2px;
-    background: var(--muted-color);
-    animation: hero-strike-through 0.9s ease-in-out 0.6s forwards;
-}
-
-@keyframes hero-strike-through {
-    from { width: 0; }
-    to   { width: 100%; }
-}
-
-@keyframes hero-break-color {
-    from { color: var(--highlight-color); }
-    to   { color: var(--muted-color); }
-}
 
 
 .hero-bio-row {
@@ -409,6 +381,30 @@ nav .mobile-nav {
 }
 
 
+.post-view .post-overview {
+    font-size: 1.05em;
+    line-height: 1.5;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+.project-card .project-overview {
+    font-size: 0.9em;
+    line-height: 1.45;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+
+.project-card .project-highlight {
+    font-size: 0.9em;
+    line-height: 1.45;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+
 .project-card .project-skills {
     display: flex;
     flex-wrap: wrap;
@@ -422,38 +418,10 @@ nav .mobile-nav {
     font-size: 0.78em;
     font-weight: 600;
     background-color: var(--light-background-color);
-    color: #CC3700;
+    color: var(--accent-deep-color);
     white-space: nowrap;
 }
 
-.project-card .project-description {
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-    line-clamp: 4px;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-break: break-word;
-    line-height: 1.5; 
-    max-height: calc(1.5em * 4); 
-}
-
-.project-card .read-more {
-    background-color: transparent;
-    border: none;
-    color: var(--highlight-color);
-    cursor: pointer;
-    font-size: 0.85em;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
-    margin-top: auto;
-    padding-top: 10px;
-    text-align: start;
-}
-
-.project-card .read-more:hover {
-    text-decoration: underline;
-}
 
 
 
@@ -752,10 +720,6 @@ footer p {
     margin-bottom: 10px;
 }
 
-.post-view .summary .project-description {
-    margin-bottom: 10px;
-}
-
 .post-view .summary .skills-card {
     display: flex;
     flex-direction: column;
@@ -924,7 +888,7 @@ footer p {
     /*   Section 2: Project-grid  */
     .project-grid-section .grid-container .project-card {
         max-width: 500px;
-        height: 500px;
+        min-height: 320px;
         margin: 0 auto;
     }
 
