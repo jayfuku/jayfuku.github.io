@@ -7,7 +7,7 @@ redirect_from:
   - /_projects/HSREndgameDB/
 title: HSREndgameDB.info
 description: "Community database where Honkai: Star Rail players share and find endgame clears."
-highlight: "1,000+ monthly visitors."
+highlight: "2,000+ monthly visitors."
 github-url: https://github.com/jayfuku/HSREndgameDB-Public
 live-url: https://www.hsrendgamedb.info/
 skills: 
